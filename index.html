@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Play It: Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="intro">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="board">
+        <div class="container">
+            <button data-i="0" data-j="0" id="1" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="0" data-j="1" id="2" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="0" data-j="2" id="3" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="1" data-j="0" id="4" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="1" data-j="1" id="5" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="1" data-j="2" id="6" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="2" data-j="0" id="7" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="2" data-j="1" id="8" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+            <button data-i="2" data-j="2" id="9" class="box"
+                onclick="func(this.id,this.dataset.i,this.dataset.j)"></button>
+        </div>
+    </div>
+        <div id="winner">
+            <p></p>
+            <button id="reset" onclick="reset()">RESET</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
